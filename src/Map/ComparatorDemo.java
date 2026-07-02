@@ -1,6 +1,7 @@
 package Map;
 
 import java.util.Comparator;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -15,6 +16,14 @@ class Employee  {
         this.salary = salary;
     }
 
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
 }
 
 class MyComparator implements Comparator<Employee>{
@@ -31,7 +40,11 @@ public class ComparatorDemo {
         map.put(new Employee(4, "amit", 10401), "AMIT");
         map.put(new Employee(3, "ajay", 10105), "AJAY");
         map.put(new Employee(5, "HARI", 12101), "HARI");
-        System.out.println(map);
+
+        for (Map.Entry<Employee,String> entry : map.entrySet()){
+            System.out.println(entry);
+    }
+}
 
 
         /*
@@ -52,4 +65,4 @@ public class ComparatorDemo {
 
          */
     }
-}
+

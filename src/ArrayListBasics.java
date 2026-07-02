@@ -24,7 +24,7 @@ public class ArrayListBasics {
         names.add(2,"E"); // O(n)
         System.out.println(names);
 
-        names.remove(2);
+        names.remove(2); // O(1)
         System.out.println(names);
 
         String[] str = {"A","B","C","D"};

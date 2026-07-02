@@ -15,12 +15,12 @@ public class VecotorDemo {
         Enumeration<Integer> enumeration = vector.elements();
         while (enumeration.hasMoreElements()){
             Integer data = enumeration.nextElement();
-            System.out.println(data);
+            System.out.print(data+" ");
         }
         Iterator<Integer> iterator = vector.iterator();
         while (iterator.hasNext()){
             Integer next = iterator.next();
-            System.out.println(next);
+            System.out.print(next+" ");
         }
     }
 }

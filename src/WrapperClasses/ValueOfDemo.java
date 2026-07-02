@@ -9,7 +9,7 @@ public class ValueOfDemo {
         System.out.println(i.intValue());
         System.out.println(i );
 
-        int i3 = Integer.parseInt("10"); // --> convert into primitive
+        int i3 = Integer.parseInt("10"); // --> string convert into primitive int
         System.out.println(i3);
 
         boolean b = Boolean.parseBoolean("1");

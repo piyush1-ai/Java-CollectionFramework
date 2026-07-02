@@ -16,6 +16,7 @@ public class QueueDemo {
         pq.add(200);
         pq.add(30);
         pq.add(2);
+        System.out.println(pq);
 
         System.out.println(pq.poll());
         System.out.println(pq.poll());
